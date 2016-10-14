@@ -9,7 +9,7 @@
 import java.util.Scanner;
 import java.awt.Color;
 
-public class Template
+public class NiggerSim
 {
     public static void main(String args[])
     {
