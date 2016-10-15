@@ -27,7 +27,7 @@ public class NiggerRunner
         n2.printStats();
         n3.printStats();                    //INTRO + STATS
         //_________________________________________________________________
-        
+        plantation.setMainNigger(n1, n2, n3)
         plantation.moveOn();
         plantation.Story();
         
