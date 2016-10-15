@@ -20,7 +20,9 @@ public class NiggerRunner
         setParam.randNumGen();///
         setParam.setNewNigger();
         
-    
+        n1.printStats();
+        n2.printStast();
+        n3.printStats();
         //nigger.printAllGets();
     }
 }
