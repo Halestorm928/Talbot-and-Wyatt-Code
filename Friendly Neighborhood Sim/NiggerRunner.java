@@ -23,11 +23,9 @@ public class NiggerRunner
         setParam.randNumGen();///
         n3 = setParam.setNewNigger(n3);
         
-        n1.printStats();
-        n2.printStats();
-        n3.printStats();                    //INTRO + STATS
+        n1.printStats();                  //INTRO + STATS
         //_________________________________________________________________
-        plantation.setMainNigger(n1, n2, n3)
+        plantation.setMainNiggers(n1, n2, n3);
         plantation.moveOn();
         plantation.Story();
         
