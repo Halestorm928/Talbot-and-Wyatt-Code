@@ -4,17 +4,19 @@ public class setParam
 {
     private double rand = 0.0;
     private byte randB = 0;
+    
     public void randNumGen()
     {
         rand = Math.random();
         rand = rand * 100.0;
         randB = (byte)(Math.ceil(rand));
     }
-    public void setNewNigger()
+    public Nigger setNewNigger(Nigger n)
     {
         if (randB <= 33)
         {
             Nigger n1 = new Nigger(0, 40, 10, 80, 90, 90, "John", 1);
+            return n;
         }
         else if(randB <= 67)
         {
@@ -24,6 +26,11 @@ public class setParam
         {
             Nigger n3 = new Nigger(0, 35, 25, 75, 115, 115, "Jarius", 1);
         }
+        else
+        {
+            //Nigger n0 = new Nigger(0, 100, 10, 80, 90, 90, "elsenigger", 1);
+        }
+        return n;
     }
 }
     
