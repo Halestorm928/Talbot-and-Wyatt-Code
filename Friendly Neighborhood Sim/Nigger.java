@@ -68,18 +68,21 @@ public class Nigger
         return name;
     }
     
-    //Get all the gets
-    public void printAllGets()
+    //this method prints all the stats ofone nigger
+    
+    public void printStats()
     {
-        System.out.print(getCurExp());
-        getMaxExp();
-        getCurHatred();
-        getMaxHatred();
-        getCurHp();
-        getMaxHp();
-        getLevel();
-        getName();
-        getCurExp();
+        System.out.println("NAME: " + getName());
+        System.out.println("LVL: " + getLevel());
+        System.out.println("HP: " + getCurHp() + "//" + getMaxHp());
+        System.out.println("EXP: " + getCurExp() + "//" + getMaxExp());
+        System.out.println("HATRED: " + getCurHatred() + "//" + getMaxHatred());
+        System.out.println("______________________________________________________");
         
+    }
+    //This is a test string
+    public String toString()
+    {
+        return "test";
     }
 }
