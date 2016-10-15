@@ -9,8 +9,6 @@ public class Plantation
         String enter;
         enter = input.nextLine();
         
-        System.out.println(Nigger.getName(n) + " " +n2.getName +" " + n3.getName);
-        
         if(enter.isEmpty())
         {
             System.out.println('\u000C');
