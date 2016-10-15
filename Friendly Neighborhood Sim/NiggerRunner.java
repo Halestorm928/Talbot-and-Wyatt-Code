@@ -7,14 +7,14 @@ public class NiggerRunner
         ClearScreen clear = new ClearScreen();
         Intro intro = new Intro();
         setParam setParam = new setParam();
-        Plantation plantation = new Plantation();
-        
+        Plantation1 plantation1 = new Plantation1();
+        LevelSelect level = new LevelSelect();
         
         Nigger n1 = new Nigger();
         Nigger n2 = new Nigger();
         Nigger n3 = new Nigger();
         
-        intro.Intro();
+        
         
         setParam.randNumGen();
         n1 = setParam.setNewNigger(n1);
@@ -23,13 +23,21 @@ public class NiggerRunner
         setParam.randNumGen();///
         n3 = setParam.setNewNigger(n3);
         
+        intro.Intro();
+        
         n1.printStats();
         n2.printStats();
         n3.printStats();                    //INTRO + STATS
         //_________________________________________________________________
-        plantation.setMainNiggers(n1, n2, n3);
-        plantation.moveOn();
-        plantation.Story();
+        
+        level.moveOn();
+        
+        plantation1.setMainNiggers(n1, n2, n3);       //These two functions work, the functions below are testing
+        plantation1.Story();
+        
+        
+        //level.level();
+        
         
     }
 }

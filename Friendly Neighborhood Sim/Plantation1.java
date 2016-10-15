@@ -1,35 +1,26 @@
 import java.util.Scanner;
-public class Plantation
+public class Plantation1
 {
     Nigger n1 = new Nigger();
     Nigger n2 = new Nigger();
     Nigger n3 = new Nigger();
+   
     int chooseachar;
     Scanner input = new Scanner(System.in);
     
-    public void moveOn()
+    public String printName()
     {
-        System.out.println("Press Enter to move on");
-        String enter;
-        enter = input.nextLine();
-        
-        
-        
-        if(enter.isEmpty())
-        {
-            System.out.println('\u000C');
-        }
+        return "Plantation 1";
     }
     public void setMainNiggers(Nigger mn1, Nigger mn2, Nigger mn3)
     {
-        // Sets first nigger
+        
         n1 = mn1;
         n2 = mn2;
         n3 = mn3;
     }
     public void Story()
     {
-        
         
         System.out.println("Welcome to " +Intro.playername+ "'s Plantation, We've got plenty of things to do");
         System.out.println("");
@@ -50,7 +41,7 @@ public class Plantation
         
         if (chooseachar == 2)
         {
-            System.out.println("Here's"  + n2.getName() + "'s stats");
+            System.out.println("Here's "  + n2.getName() + "'s stats");
             System.out.println("");
             n2.printStats();
         }
@@ -61,5 +52,6 @@ public class Plantation
             System.out.println("");
             n3.printStats();
         }
+        
     }
 }
