@@ -21,7 +21,7 @@ public class NiggerRunner
         setParam.setNewNigger();
         
         n1.printStats();
-        n2.printStast();
+        n2.printStats();
         n3.printStats();
         //nigger.printAllGets();
     }
