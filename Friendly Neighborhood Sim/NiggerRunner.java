@@ -8,10 +8,10 @@ public class NiggerRunner
         ClearScreen clear = new ClearScreen();
         Intro intro = new Intro();
         Nigger nigger1 = new Nigger();
-        setParem setParem = new setParem();
+        setParam setParam = new setParem();
         
         intro.Intro();
-        setParem.setParem();
+        setParam.setParam();
         System.out.println(nigger1);
         //nigger.printAllGets();
     }

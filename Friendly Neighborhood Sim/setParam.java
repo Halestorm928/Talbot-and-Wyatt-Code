@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class setParem
+public class setParam
 {
-    public void setParem()
+    public void setParam()
     {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter # of arms");
