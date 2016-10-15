@@ -14,11 +14,11 @@ public class NiggerRunner
         intro.Intro();
         
         setParam.randNumGen();
-        setParam.setNewNigger(n1);
+        n1 = setParam.setNewNigger(n1);
         setParam.randNumGen(); ///
-        setParam.setNewNigger(n2);
+        n2 = setParam.setNewNigger(n2);
         setParam.randNumGen();///
-        setParam.setNewNigger(n3);
+        n3 = setParam.setNewNigger(n3);
         
         n1.printStats();
         n2.printStats();

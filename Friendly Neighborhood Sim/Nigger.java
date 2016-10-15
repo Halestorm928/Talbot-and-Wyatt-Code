@@ -74,9 +74,9 @@ public class Nigger
     {
         System.out.println("NAME: " + getName());
         System.out.println("LVL: " + getLevel());
-        System.out.println("HP: " + getCurHp() + "//" + getMaxHp());
-        System.out.println("EXP: " + getCurExp() + "//" + getMaxExp());
-        System.out.println("HATRED: " + getCurHatred() + "//" + getMaxHatred());
+        System.out.println("HP: " + getCurHp() + "/" + getMaxHp());
+        System.out.println("EXP: " + getCurExp() + "/" + getMaxExp());
+        System.out.println("HATRED: " + getCurHatred() + "/" + getMaxHatred());
         System.out.println("______________________________________________________");
         
     }
