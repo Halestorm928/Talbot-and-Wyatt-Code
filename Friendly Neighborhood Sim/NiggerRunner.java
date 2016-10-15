@@ -7,12 +7,18 @@ public class NiggerRunner
         Scanner input = new Scanner(System.in);
         ClearScreen clear = new ClearScreen();
         Intro intro = new Intro();
-        Nigger nigger1 = new Nigger();
         setParam setParam = new setParem();
+        Nigger nigger = new Nigger();
+        Nigger n1 = new Nigger();
+        Nigger n2 = new Nigger();
+        Nigger n3 = new Nigger();
+        
         
         intro.Intro();
         setParam.setParam();
-        System.out.println(nigger1);
+        System.out.println(n1);
+        
+    
         //nigger.printAllGets();
     }
 }
