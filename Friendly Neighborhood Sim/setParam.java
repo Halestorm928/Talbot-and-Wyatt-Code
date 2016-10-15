@@ -15,17 +15,17 @@ public class setParam
     {
         if (randB <= 33)
         {
-            n = new Nigger(0, 40, 10, 80, 90, 90, "John", 1);
+            n = new Nigger(0, 40, 10, 80, 90, 90, "John", 1, 13, 50);
             return n;
         }
         else if(randB <= 67)
         {
-            n = new Nigger(0, 30, 20, 110, 100, 100, "Barry", 1);
+            n = new Nigger(0, 30, 20, 110, 100, 100, "Barry", 1, 16, 60);
             return n;
         }
         else if(randB <= 100)
         {
-            n = new Nigger(0, 35, 25, 75, 115, 115, "Jarius", 1);
+            n = new Nigger(0, 35, 25, 75, 115, 115, "Jarius", 1, 19, 35);
             return n;
         }
         else

@@ -8,7 +8,7 @@
 public class Nigger
 {
     // instance variables - replace the example below with your own
-    private int curexp, maxexp, curhatred, maxhatred, curhp, maxhp, lvl;
+    private int curexp, maxexp, curhatred, maxhatred, curhp, maxhp, lvl, intel, power;
     private String name;
 
     public Nigger()
@@ -23,7 +23,7 @@ public class Nigger
        name = "Tyrone";
     }
     
-    public Nigger(int param_curexp, int param_maxexp ,int param_curhatred, int param_maxhatred, int param_curhp, int param_maxhp, String param_name, int param_level)
+    public Nigger(int param_curexp, int param_maxexp ,int param_curhatred, int param_maxhatred, int param_curhp, int param_maxhp, String param_name, int param_level, int param_power, int param_intel)
     {
        maxexp = param_maxexp;
        curexp = param_curexp;
@@ -33,6 +33,8 @@ public class Nigger
        maxhp = param_maxhp;
        lvl = param_level;
        name = param_name;
+       power = param_power;
+       intel = param_intel;
     }
     
     public int getCurExp()
@@ -67,7 +69,44 @@ public class Nigger
     {
         return name;
     }
-    
+    public String getPowerS()
+    {
+        if (power > 18)
+        {
+            return "big";
+        }
+        else if (power <=18)
+        {
+            if (power >= 14)
+            {
+                return "regular";
+            }
+            else if(power < 14)
+            {
+                return "weak";
+            }
+        }
+        return "";
+    }
+    public String getIntelS()
+    {
+        if (intel > 60)
+        {
+            return "smart";
+        }
+        else if (intel <= 60)
+        {
+            if (intel >= 50)
+            {
+                return "average";
+            }
+            else if(intel < 40)
+            {
+                return "dumb";
+            }
+        }
+        return "";
+    }
     //this method prints all the stats ofone nigger
     
     public void printStats()
@@ -77,6 +116,7 @@ public class Nigger
         System.out.println("HP: " + getCurHp() + "/" + getMaxHp());
         System.out.println("EXP: " + getCurExp() + "/" + getMaxExp());
         System.out.println("HATRED: " + getCurHatred() + "/" + getMaxHatred());
+        System.out.println("DESC.: " + getName() + " is a " + getPowerS() + " and " + getIntelS() + " nigger.");
         System.out.println("______________________________________________________");
         
     }
