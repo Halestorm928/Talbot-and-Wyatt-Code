@@ -7,6 +7,8 @@ public class NiggerRunner
         ClearScreen clear = new ClearScreen();
         Intro intro = new Intro();
         setParam setParam = new setParam();
+        
+        
         Nigger n1 = new Nigger();
         Nigger n2 = new Nigger();
         Nigger n3 = new Nigger();
@@ -22,7 +24,8 @@ public class NiggerRunner
         
         n1.printStats();
         n2.printStats();
-        n3.printStats();
-        //nigger.printAllGets();
+        n3.printStats();                    //INTRO + STATS
+        //_________________________________________________________________
+        
     }
 }
