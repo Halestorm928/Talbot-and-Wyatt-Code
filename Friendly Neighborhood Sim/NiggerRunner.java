@@ -7,6 +7,7 @@ public class NiggerRunner
         ClearScreen clear = new ClearScreen();
         Intro intro = new Intro();
         setParam setParam = new setParam();
+        Plantation plantation = new Plantation();
         
         
         Nigger n1 = new Nigger();
@@ -26,6 +27,9 @@ public class NiggerRunner
         n2.printStats();
         n3.printStats();                    //INTRO + STATS
         //_________________________________________________________________
+        
+        plantation.moveOn();
+        plantation.Story();
         
     }
 }

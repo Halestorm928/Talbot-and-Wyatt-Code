@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class ClearScreen
 {
 
-    public static void ClearScreen()
+    public void ClearScreen()
     {
         System.out.print('\u000C');
     }   

@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Intro
 {
     Scanner input = new Scanner(System.in);
-    String playername;
+    static String playername;
     public void Intro()
     {
         System.out.println("Enter your name");
