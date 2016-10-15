@@ -10,7 +10,7 @@ public class setParam
         rand = rand * 100.0;
         randB = (byte)(Math.ceil(rand));
     }
-    public void setNigger()
+    public void setNewNigger()
     {
         if (randB <= 33)
         {
