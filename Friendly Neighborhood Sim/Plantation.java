@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class Plantation
 {
+    Nigger n1 = new Nigger();
     Scanner input = new Scanner(System.in);
    
     public void moveOn()
@@ -9,12 +10,17 @@ public class Plantation
         String enter;
         enter = input.nextLine();
         
-        System.out.println(Nigger.getName(n) + " " +n2.getName +" " + n3.getName);
+        
         
         if(enter.isEmpty())
         {
             System.out.println('\u000C');
         }
+    }
+    public void setMainNiggers(Nigger mn1, Nigger mn2, Nigger mn3)
+    {
+        // Sets first nigger
+        n1 = mn1;
     }
     public void Story()
     {
