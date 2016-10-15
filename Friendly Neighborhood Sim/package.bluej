@@ -21,6 +21,7 @@ objectbench.height=100
 objectbench.width=423
 package.editor.height=290
 package.editor.width=630
+<<<<<<< HEAD
 package.editor.x=-4
 package.editor.y=477
 package.numDependencies=6
@@ -61,10 +62,43 @@ target3.editor.y=0
 target3.height=50
 target3.name=Intro
 target3.naviview.expanded=true
+=======
+package.editor.x=206
+package.editor.y=248
+package.numDependencies=0
+package.numTargets=3
+package.showExtends=true
+package.showUses=true
+project.charset=windows-1252
+target1.height=50
+target1.name=NiggerSim
+target1.showInterface=false
+target1.type=ClassTarget
+target1.typeParameters=
+target1.width=80
+target1.x=110
+target1.y=10
+target2.height=50
+target2.name=NiggerRunner
+target2.showInterface=false
+target2.type=ClassTarget
+target2.typeParameters=
+target2.width=100
+target2.x=70
+target2.y=70
+target3.editor.height=735
+target3.editor.width=697
+target3.editor.x=-7
+target3.editor.y=0
+target3.height=50
+target3.name=Nigger
+target3.naviview.expanded=false
+>>>>>>> origin/master
 target3.showInterface=false
 target3.type=ClassTarget
 target3.typeParameters=
 target3.width=80
+<<<<<<< HEAD
 target3.x=370
 target3.y=60
 target4.editor.height=700
@@ -106,3 +140,7 @@ target6.typeParameters=
 target6.width=80
 target6.x=200
 target6.y=220
+=======
+target3.x=200
+target3.y=10
+>>>>>>> origin/master
