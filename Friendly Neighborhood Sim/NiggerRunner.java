@@ -10,7 +10,7 @@ public class NiggerRunner
         Nigger nigger1 = new Nigger();
         setParem setParem = new setParem();
         
-        //put intro here
+        intro.Intro();
         setParem.setParem();
         System.out.println(nigger1);
         //nigger.printAllGets();
