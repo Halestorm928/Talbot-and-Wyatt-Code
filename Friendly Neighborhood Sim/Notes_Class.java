@@ -8,6 +8,7 @@ xp: alksjdflj
 _____________________________
 (cursor)
 
+///////////////////////////////////////////
 the hud is separated from the cursor
 
 
