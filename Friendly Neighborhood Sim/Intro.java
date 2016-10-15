@@ -4,7 +4,7 @@ public class Intro
 {
     Scanner input = new Scanner(System.in);
     String playername;
-    public void main(String args[])
+    public void Intro()
     {
         System.out.println("Enter your name");
         playername = input.nextLine();

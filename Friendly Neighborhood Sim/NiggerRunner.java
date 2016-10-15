@@ -9,14 +9,16 @@ public class NiggerRunner
         Intro intro = new Intro();
         setParam setParam = new setParam();
         Nigger nigger = new Nigger();
-        Nigger n1 = new Nigger();
-        Nigger n2 = new Nigger();
-        Nigger n3 = new Nigger();
         
         
         intro.Intro();
-        setParam.setParam();
-        System.out.println(n1);
+        
+        setParam.randNumGen();
+        setParam.setNewNigger();
+        setParam.randNumGen(); ///
+        setParam.setNewNigger();
+        setParam.randNumGen();///
+        setParam.setNewNigger();
         
     
         //nigger.printAllGets();
