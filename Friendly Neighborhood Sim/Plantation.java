@@ -3,6 +3,10 @@ public class Plantation
 {
     Scanner input = new Scanner(System.in);
    
+    Nigger n1;
+    Nigger n2;
+    Nigger n3;
+    
     public void moveOn()
     {
         System.out.println("Press Enter to move on");
@@ -21,23 +25,25 @@ public class Plantation
         System.out.print("Welcome to " +Intro.playername+ "'s Plantation, We've got plenty of things to do");
         
         System.out.println("Choose a nigger::");
-        System.out.println(n1.getName + " " +n2.getName +" " + n3.getName);
+        
+        System.out.println(n1.getName() + " " +n2.getName() +" " + n3.getName());
+        chooseachar = input.nextLine();
         
         if (chooseachar.equals("n1"));
         {
-            System.out.println("Here's" + n1.getName + "'s stats");
+            System.out.println("Here's" + n1.getName() + "'s stats");
             n1.printStats();
         }
         
         if (chooseachar.equals("n2"));
         {
-            System.out.println("Here's" + n2.getName + "'s stats");
+            System.out.println("Here's" + n2.getName() + "'s stats");
             n1.printStats();
         }
         
         if (chooseachar.equals("n3"));
         {
-            System.out.println("Here's" + n3.getName + "'s stats");
+            System.out.println("Here's" + n3.getName() + "'s stats");
             n1.printStats();
         }
     }
