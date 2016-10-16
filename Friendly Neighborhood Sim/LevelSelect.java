@@ -33,7 +33,7 @@ public class LevelSelect
     }
     public void moveOn()
     {
-        System.out.println("Press Enter to move on");
+        System.out.println("Press Enter to continue...");
         String enter;
         enter = input.nextLine();
         

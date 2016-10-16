@@ -10,7 +10,7 @@ public class Nigger
     // instance variables - replace the example below with your own
     private int curexp, maxexp, curhatred, maxhatred, curhp, maxhp, lvl, intel, power;
     private String name;
-    private boolean isPlantNigger;
+    private boolean isFieldNigger;
     
     //Default constructor
     public Nigger()
@@ -25,7 +25,7 @@ public class Nigger
        name = "Tyrone";
        power = 0;
        intel = 0;
-       isPlantNigger = false;
+       isFieldNigger = false;
     }
     //Parametized constructor
     public Nigger(int param_curexp, int param_maxexp ,int param_curhatred, int param_maxhatred, int param_curhp, int param_maxhp, String param_name, int param_level, int param_power, int param_intel)
@@ -40,7 +40,7 @@ public class Nigger
        name = param_name;
        power = param_power;
        intel = param_intel;
-       isPlantNigger = false;
+       isFieldNigger = false;
     }
     
     //getter functions
@@ -62,7 +62,7 @@ public class Nigger
     }
     public int getMaxHp()
     {
-        return curhp;
+        return maxhp;
     }
     public int getMaxExp()
     {
@@ -114,22 +114,28 @@ public class Nigger
         }
         return "";
     }
-    public boolean getPlantNigger()
+    public boolean getFieldNigger()
     {
-        return isPlantNigger;
+        return isFieldNigger;
     }
     
     //Setters    
     public void whipNigger()
     {
-        curhp -= 15;
-        curhatred += 5;
-        curexp += 10;
+        curhp = curhp - 15;
+        curhatred = curhatred + 5;
+        curexp = curexp + 10;
     }
-    public void setIsPlantNigger(boolean param_isPlantNigger)
+    public void setIsFieldNigger(boolean param_isFieldNigger)
     {
-        isPlantNigger = param_isPlantNigger;
+        isFieldNigger = param_isFieldNigger;
     }    
+    
+    //Checker
+    public void checkLevelUp()
+    {
+        
+    }
     
     //this method prints all the stats ofone nigger
     public void printStats()
