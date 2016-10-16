@@ -33,8 +33,6 @@ public class NiggerRunner
         level.moveOn();
         level.setMainNiggers(n1, n2, n3);
         level.level();
-        plantation1.setMainNiggers(n1, n2, n3);       //These two functions work, the functions below are testing
-        plantation1.Story();
         
         
         //level.level();
