@@ -10,7 +10,9 @@ public class Nigger
     // instance variables - replace the example below with your own
     private int curexp, maxexp, curhatred, maxhatred, curhp, maxhp, lvl, intel, power;
     private String name;
-
+    private boolean isPlantNigger;
+    
+    //Default constructor
     public Nigger()
     {
        curexp = 0;
@@ -21,8 +23,11 @@ public class Nigger
        maxhp = 100;
        lvl = 0;
        name = "Tyrone";
+       power = 0;
+       intel = 0;
+       isPlantNigger = false;
     }
-    
+    //Parametized constructor
     public Nigger(int param_curexp, int param_maxexp ,int param_curhatred, int param_maxhatred, int param_curhp, int param_maxhp, String param_name, int param_level, int param_power, int param_intel)
     {
        maxexp = param_maxexp;
@@ -35,8 +40,10 @@ public class Nigger
        name = param_name;
        power = param_power;
        intel = param_intel;
+       isPlantNigger = false;
     }
     
+    //getter functions
     public int getCurExp()
     {
         return curexp;
@@ -107,8 +114,24 @@ public class Nigger
         }
         return "";
     }
-    //this method prints all the stats ofone nigger
+    public boolean getPlantNigger()
+    {
+        return isPlantNigger;
+    }
     
+    //Setters    
+    public void whipNigger()
+    {
+        curhp -= 15;
+        curhatred += 5;
+        curexp += 10;
+    }
+    public void setIsPlantNigger(boolean param_isPlantNigger)
+    {
+        isPlantNigger = param_isPlantNigger;
+    }    
+    
+    //this method prints all the stats ofone nigger
     public void printStats()
     {
         System.out.println("NAME: " + getName());

@@ -13,12 +13,12 @@ public class Plantation1
         return "Plantation 1";
     }
     public void setMainNiggers(Nigger mn1, Nigger mn2, Nigger mn3)
-    {
-        
+    {      
         n1 = mn1;
         n2 = mn2;
         n3 = mn3;
     }
+    //Starts general flow of Plantation Class
     public void Story()
     {
         
