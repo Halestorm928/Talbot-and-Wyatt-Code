@@ -1,6 +1,8 @@
 #BlueJ class context
-comment0.params=
-comment0.target=void\ level()
+comment0.params=mn1\ mn2\ mn3
+comment0.target=void\ setMainNiggers(Nigger,\ Nigger,\ Nigger)
 comment1.params=
-comment1.target=void\ moveOn()
-numComments=2
+comment1.target=void\ level()
+comment2.params=
+comment2.target=void\ moveOn()
+numComments=3
