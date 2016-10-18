@@ -38,6 +38,11 @@ public class setParam
             n = new Nigger(0, 45, 15, 90, 100, 100, "Josh", 1, 14, 70);
             return n;
         }
+        else if (randB <= 90)
+        {
+            n = new Nigger(0, 45, 15, 90, 100, 100, "Ben Ahmadi", 1, 14, 70);
+        }
+        
         else if (randB <= 100)
         {
             n = new Nigger(0, 50, 30, 60, 90, 90, "Mehki", 1, 12, 75);
@@ -48,6 +53,7 @@ public class setParam
             n = new Nigger(0, 30, 0, 65, 120, 120, "Evan", 1, 20, 25);
             return n;
         }
+        
         return n;
     }
 }
