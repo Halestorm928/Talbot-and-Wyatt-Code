@@ -13,24 +13,40 @@ public class setParam
     }
     public Nigger setNewNigger(Nigger n)
     {
-        if (randB <= 33)
+        if (randB <= 17)
         {
             n = new Nigger(0, 40, 10, 80, 90, 90, "John", 1, 13, 50);
             return n;
         }
-        else if(randB <= 67)
+        else if(randB <= 34)
         {
             n = new Nigger(0, 30, 20, 110, 100, 100, "Barry", 1, 16, 60);
             return n;
         }
-        else if(randB <= 100)
+        else if(randB <= 51)
         {
             n = new Nigger(0, 35, 25, 75, 115, 115, "Jarius", 1, 19, 35);
             return n;
         }
-        else
+        else if (randB <= 68)
         {
-            //Nigger n0 = new Nigger(0, 100, 10, 80, 90, 90, "elsenigger", 1);
+            n = new Nigger(0, 35, 25, 75, 115, 115, "Maxwell", 1, 19, 35);
+            return n;
+        }
+        else if (randB <= 85)
+        {
+            n = new Nigger(0, 45, 15, 90, 100, 100, "Josh", 1, 14, 70);
+            return n;
+        }
+        else if (randB <= 100)
+        {
+            n = new Nigger(0, 50, 30, 60, 90, 90, "Mehki", 1, 12, 75);
+            return n;
+        }
+        else if (randB <= 101)
+        {
+            n = new Nigger(0, 30, 0, 65, 120, 120, "Evan", 1, 20, 25);
+            return n;
         }
         return n;
     }

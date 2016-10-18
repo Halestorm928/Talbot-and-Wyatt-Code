@@ -88,6 +88,7 @@ public class Plantation1
                 }
             }
             System.out.println("Whip your nigger?");
+            System.out.println("Yes(1)\t\tNo(2)");
             choice = 0;
             choice = input.nextInt();
             if (choice == 1)
