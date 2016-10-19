@@ -9,6 +9,7 @@ public class NiggerRunner
         setParam setParam = new setParam();
         Plantation1 plantation1 = new Plantation1();
         LevelSelect level = new LevelSelect();
+        Inventory inventory = new Inventory();
         
         Nigger n1 = new Nigger();
         Nigger n2 = new Nigger();
