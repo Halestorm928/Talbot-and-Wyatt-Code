@@ -4,6 +4,7 @@ public class LevelSelect
     Scanner input = new Scanner(System.in);
     private int a;
     Plantation1 plantation1 = new Plantation1();
+    Store store = new Store();
     Nigger n1 = new Nigger();
     Nigger n2 = new Nigger();
     Nigger n3 = new Nigger();
@@ -18,17 +19,23 @@ public class LevelSelect
     {
         System.out.println("Where would you like to go?");
         System.out.println("");
-        System.out.println(plantation1.printName());
-        System.out.println("(1)  (2)  (3)");
+        System.out.println(plantation1.printName() + store.printName());
+        System.out.println("(1)  (4)");
         
         a = input.nextInt();
         
         
-        if (a==1)
+        switch(a)
         {
-            moveOn();
-            plantation1.setMainNiggers(n1, n2, n3);
-            plantation1.Story();
+          case 1:
+          moveOn();
+          plantation1.setMainNiggers(n1, n2, n3);
+          plantation1.Story(); break;
+          
+          case 2:
+          moveOn();
+          store.RunStore();
+         
         }
     }
     public void moveOn()

@@ -1,13 +1,9 @@
+import java.util.Scanner;
 public class Inventory
 {
-   public Inventory()
-   {
-       
-       
-   }
-    
-    
-    
-    
-    
-}
+    int inv_cotton = 10;
+    int inv_tobacco = 25;
+    public Inventory()
+    {
+    }
+    }

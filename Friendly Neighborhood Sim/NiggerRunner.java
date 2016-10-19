@@ -34,6 +34,7 @@ public class NiggerRunner
         level.moveOn();
         level.setMainNiggers(n1, n2, n3);
         level.level();
+       
         
         
         //level.level();
