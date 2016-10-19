@@ -31,18 +31,26 @@ public class Plantation1
             System.out.println('\u000C');
         }
     }
+    public void welcome()
+    {
+        System.out.println("Welcome to " +Intro.playername+ "'s Plantation, We've got plenty of things to do");
+        System.out.println("");
+    }
+    public void plantName()
+    {
+        System.out.println("Plantaion: " + Intro.playername + "'s Plantation");
+    }
     //Starts general flow of Plantation Class
     public void Story()
     {
         boolean isfn;
         int numLashes;
         
-        System.out.println("Welcome to " +Intro.playername+ "'s Plantation, We've got plenty of things to do");
-        System.out.println("");
-        System.out.println("Choose a nigger::");
         
-        System.out.println(n1.getName() + " " +n2.getName() +" " + n3.getName());
-        System.out.println("(1)   (2)   (3)");
+        
+        System.out.println("Choose a nigger:");
+        
+        System.out.println(n1.getName() + "(1) " +n2.getName() +"(2) " + n3.getName() + "(3)");
 
         choice = input.nextInt();
         

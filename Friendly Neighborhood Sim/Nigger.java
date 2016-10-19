@@ -134,7 +134,38 @@ public class Nigger
     //Checker
     public void checkLevelUp()
     {
-        
+        if (curexp >= maxexp)
+        {
+            curexp = curexp - maxhp;
+            lvl += 1;
+            maxexp = (int)(Math.ceil (maxexp * 1.2));
+            // Upping stats
+            if (lvl > 1)
+            {
+                // This ups all the stats this much per level
+                power = power + 1;
+                intel = intel + 2;
+                maxhatred = maxhatred + 2;
+                maxhp = maxhp + 5;
+                curhp = (int)(Math.ceil((maxhp + curhp)/2.0));
+            }
+        }
+        else
+        {
+            
+        }
+    }
+    public boolean checkLife()
+    {
+        if (curhp <= 0)
+        {
+            System.out.println(getName() + " is a dead nigger!");
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
     
     //this method prints all the stats ofone nigger
