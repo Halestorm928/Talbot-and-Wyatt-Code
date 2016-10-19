@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Store
 {
     
-    Scanner input = new Scanner(System.in);
+    Scanner store_input = new Scanner(System.in);
     Inventory inventory = new Inventory();
     LevelSelect level = new LevelSelect();
     
@@ -22,7 +22,7 @@ public class Store
     public void RunStore()
     {
      System.out.println("Would you like to Sell(1) or Buy(2) Back(3)?");
-     yesorno = input.nextInt();
+     yesorno = store_input.nextInt();
      switch (yesorno)
      {
       case 1:
@@ -43,7 +43,7 @@ public class Store
     {
         System.out.println("The merchant will buy for : \n Tobacco: " + p_tobacco + "\n Cotton: " + p_cotton);
         System.out.println("Do you want to sell cotton(1), tobacco(2), back(3)");
-        int response = input.nextInt();
+        int response = store_input.nextInt();
         
         switch(response)
         {
@@ -68,9 +68,9 @@ public class Store
     public void Buy()
     {
         System.out.println("The current prices are: \n Tobacco(1): " + p_tobacco + "\n Cotton(2): " + p_cotton +"\n(3) Back");
-        int respnose = input.nextInt();
+        int respnose = store_input.nextInt();
         System.out.println("How many would you like to purchase?");
-        int response = input.nextInt();
+        int response = store_input.nextInt();
         switch (response)
         {
             case 1 :

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class LevelSelect
 {
-    Scanner input = new Scanner(System.in);
+    Scanner levelselect_input = new Scanner(System.in);
     private int a;
     Plantation1 plantation1 = new Plantation1();
     Store store = new Store();
@@ -22,7 +22,7 @@ public class LevelSelect
         System.out.println(plantation1.printName() + store.printName());
         System.out.println("(1)  (4)");
         
-        a = input.nextInt();
+        a = levelselect_input.nextInt();
         
         
         switch(a)
@@ -42,7 +42,7 @@ public class LevelSelect
     {
         System.out.println("Press Enter to continue...");
         String enter;
-        enter = input.nextLine();
+        enter = levelselect_input.nextLine();
         
         
         
