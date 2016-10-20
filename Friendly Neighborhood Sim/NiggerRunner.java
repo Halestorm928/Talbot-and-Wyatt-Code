@@ -1,38 +1,39 @@
 import java.util.Scanner;
 public class NiggerRunner
-{
-    Scanner input = new Scanner(System.in);
+{    
     public static void main(String[] args)
     {
+        
+        Scanner input = new Scanner(System.in);
+        //Scanner for all classes
         ClearScreen clear = new ClearScreen();
-        Intro intro = new Intro();
+        Intro intro = new Intro(input);
         setParam setParam = new setParam();
         Plantation1 plantation1 = new Plantation1();
-        LevelSelect level = new LevelSelect();
+        LevelSelect level = new LevelSelect(input);
         Inventory inventory = new Inventory();
         
-        Nigger n1 = new Nigger();
-        Nigger n2 = new Nigger();
-        Nigger n3 = new Nigger();
         
-        
-        
+        Nigger[] n = new Nigger[50];
+                        
         setParam.randNumGen();
-        n1 = setParam.setNewNigger(n1);
+        n[1] = setParam.setNewNigger(n[1]);
         setParam.randNumGen(); ///
-        n2 = setParam.setNewNigger(n2);
+        n[2] = setParam.setNewNigger(n[2]);
         setParam.randNumGen();///
-        n3 = setParam.setNewNigger(n3);
+        n[3] = setParam.setNewNigger(n[3]);
         
         intro.Intro();
+        level.moveOn();
         
-        n1.printStats();
-        n2.printStats();
-        n3.printStats();                    //INTRO + STATS
+        n[1].printStats();
+        n[2].printStats();
+        n[3].printStats();                    //INTRO + STATS
         //_________________________________________________________________
         
-        level.moveOn();
-        level.setMainNiggers(n1, n2, n3);
+
+
+        level.setMainNiggers(n[1], n[2], n[3]);
         level.level();
        
         

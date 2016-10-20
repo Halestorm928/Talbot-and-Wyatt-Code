@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=
-comment0.target=Store()
+comment0.params=s
+comment0.target=Store(java.util.Scanner)
 comment1.params=
 comment1.target=java.lang.String\ printName()
 comment2.params=

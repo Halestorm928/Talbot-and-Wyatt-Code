@@ -4,6 +4,10 @@ public class Intro
 {
     Scanner input;
     static String playername;
+    public Intro(Scanner s)
+    {
+        input = s;
+    }
     public void Intro()
     {
         System.out.println("Enter your name");

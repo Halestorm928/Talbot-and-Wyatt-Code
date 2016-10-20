@@ -2,19 +2,19 @@ import java.util.Scanner;
 public class Store
 {
     
-    Scanner input= new Scanner(System.in);
+    Scanner input = new Scanner(System.in);
     Inventory inventory = new Inventory();
-    //LevelSelect level = new LevelSelect();
-    
+    LevelSelect level;
     int p_cotton = 10;
     int p_tobacco = 5;
     
     private int yesorno = 0;
     
-    public Store()
+    public Store(Scanner s)
     {
-      RunStore();
+     
     }
+    
     public String printName()
     {
         return "Store";
@@ -42,16 +42,16 @@ public class Store
         
         if (response ==1)
         {
-            System.out.println("You sell your " +p_cotton + " cotton for " + p_cotton+" each.");
-            p_cotton = p_cotton - p_cotton;
-            System.out.println("You have " + p_cotton +" cotton");
+            System.out.println("You sell your " +inventory.inv_cotton + " cotton for " + inventory.inv_cotton+" each.");
+            inventory.inv_cotton = 0;
+            System.out.println("You have " + inventory.inv_cotton +" cotton");
             RunStore();
         }
         if (response==2)
         {
             System.out.println("You sell your "+ inventory.inv_tobacco+" tabacco for " + p_tobacco+" each.");
-            inventory.inv_tobacco = inventory.inv_tobacco - inventory.inv_tobacco;
-            System.out.println("You have " + p_tobacco +" tobacco \n");
+            inventory.inv_tobacco = 0;
+            System.out.println("You have " + inventory.inv_tobacco +" tobacco \n");
             RunStore();
         }
         if (response ==3)
@@ -88,7 +88,7 @@ public class Store
     }
     public void Back()
     {
-        //level.level();
+        level.level();
     }
 }
 

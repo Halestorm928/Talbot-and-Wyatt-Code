@@ -1,14 +1,19 @@
 import java.util.Scanner;
 public class LevelSelect
 {
-    Scanner input;
     private int a;
     Plantation1 plantation1 = new Plantation1();
-    Store store = new Store();
+    Scanner input;
+    Store store = new Store(input);
     Nigger n1 = new Nigger();
     Nigger n2 = new Nigger();
     Nigger n3 = new Nigger();
-    
+   
+
+    public LevelSelect(Scanner s)
+    {
+        input = s;
+    }
     public void setMainNiggers(Nigger mn1, Nigger mn2, Nigger mn3)
     {
         n1 = mn1;
@@ -41,8 +46,6 @@ public class LevelSelect
         System.out.println("Press Enter to continue...");
         String enter;
         enter = input.nextLine();
-        
-        
         
         if(enter.isEmpty())
         {
