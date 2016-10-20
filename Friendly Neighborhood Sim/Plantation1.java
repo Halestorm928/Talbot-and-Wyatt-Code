@@ -6,7 +6,7 @@ public class Plantation1
     Nigger n3 = new Nigger();
    
     int choice;
-    Scanner input = new Scanner(System.in);
+    Scanner input;
     
     public String printName()
     {

@@ -1,9 +1,9 @@
 import java.util.Scanner;
 public class NiggerRunner
 {
+    Scanner input = new Scanner(System.in);
     public static void main(String[] args)
     {
-        Scanner input = new Scanner(System.in);
         ClearScreen clear = new ClearScreen();
         Intro intro = new Intro();
         setParam setParam = new setParam();

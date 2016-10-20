@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Store
 {
     
-    Scanner store_input = new Scanner(System.in);
+    Scanner input;
     Inventory inventory = new Inventory();
     LevelSelect level = new LevelSelect();
     
@@ -22,20 +22,15 @@ public class Store
     public void RunStore()
     {
      System.out.println("Would you like to Sell(1) or Buy(2) Back(3)?");
-     yesorno = store_input.nextInt();
-     switch (yesorno)
-     {
-      case 1:
-      Sell(); break;
+     yesorno = input.nextInt();
      
-      case 2:
-      Buy(); break;
-     
-      case 3:
-      Back(); break;
-     }
-     if (yesorno < 1 || yesorno > 3) {System.out.println("Wrong number, try again"); RunStore();}
-     
+     if (yesorno==1)
+     {Sell();}
+     if (yesorno==2)
+     {Buy();}
+     if (yesorno==3)
+     {Back();}
+     if (yesorno < 1 || yesorno > 3) {System.out.println("Wrong number, try again"); ReRun();}
      }
     
     
@@ -43,47 +38,48 @@ public class Store
     {
         System.out.println("The merchant will buy for : \n Tobacco: " + p_tobacco + "\n Cotton: " + p_cotton);
         System.out.println("Do you want to sell cotton(1), tobacco(2), back(3)");
-        int response = store_input.nextInt();
+        int response = input.nextInt();
         
-        switch(response)
+        if (response ==1)
         {
-         case 1 : 
             System.out.println("You sell your " +p_cotton + " cotton for " + p_cotton+" each.");
             p_cotton = p_cotton - p_cotton;
             System.out.println("You have " + p_cotton +" cotton");
-            RunStore(); break;
-         
-         case 2 :
+            RunStore();
+        }
+        if (response==2)
+        {
             System.out.println("You sell your "+ inventory.inv_tobacco+" tabacco for " + p_tobacco+" each.");
             inventory.inv_tobacco = inventory.inv_tobacco - inventory.inv_tobacco;
             System.out.println("You have " + p_tobacco +" tobacco \n");
-            RunStore(); break;
-          
-         case 3 :
-             Back(); break;
+            RunStore();
         }
-        if (response < 1 || response > 3) {System.out.println("Wrong number, try again"); Sell();}
+        if (response ==3)
+        {Back();}
+        if (response < 1 || response > 3) {System.out.println("Wrong number, try again"); ReRun();}
     }
 
     public void Buy()
     {
         System.out.println("The current prices are: \n Tobacco(1): " + p_tobacco + "\n Cotton(2): " + p_cotton +"\n(3) Back");
-        int respnose = store_input.nextInt();
+        int respnose = input.nextInt();
         System.out.println("How many would you like to purchase?");
-        int response = store_input.nextInt();
-        switch (response)
+        int response = input.nextInt();
+        if (response ==1)
         {
-            case 1 :
          inventory.inv_tobacco = inventory.inv_tobacco - response;
          System.out.println("You have " + inventory.inv_tobacco + " Tobacco left.");
-         break; case 2:
+        }
+        if (response ==2)
+        {
          inventory.inv_cotton = inventory.inv_cotton - response;
          System.out.println("You have: " + inventory.inv_cotton + " left");
          RunStore();
-         break; case 3:
-         Back(); break;
         }
-        if (response < 1 || response > 3){System.out.print("Wrong number, try again."); Buy();}
+        if (response == 3)
+        {
+        if (response < 1 || response > 3){System.out.print("Wrong number, try again."); ReRun();}
+        }
     }
     public void ReRun()
     {
