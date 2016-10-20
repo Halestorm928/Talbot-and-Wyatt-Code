@@ -30,7 +30,7 @@ public class LevelSelect
           plantation1.setMainNiggers(n1, n2, n3);
           plantation1.Story();
         }
-        if (a == 2)
+        if (a == 4)
         {
             moveOn();
             store.RunStore();

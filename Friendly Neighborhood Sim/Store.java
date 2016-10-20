@@ -2,9 +2,9 @@ import java.util.Scanner;
 public class Store
 {
     
-    Scanner input;
+    Scanner input= new Scanner(System.in);
     Inventory inventory = new Inventory();
-    LevelSelect level = new LevelSelect();
+    //LevelSelect level = new LevelSelect();
     
     int p_cotton = 10;
     int p_tobacco = 5;
@@ -30,7 +30,7 @@ public class Store
      {Buy();}
      if (yesorno==3)
      {Back();}
-     if (yesorno < 1 || yesorno > 3) {System.out.println("Wrong number, try again"); ReRun();}
+     else {System.out.println("Wrong number, try again"); ReRun();}
      }
     
     
@@ -88,7 +88,7 @@ public class Store
     }
     public void Back()
     {
-        level.level();
+        //level.level();
     }
 }
 
