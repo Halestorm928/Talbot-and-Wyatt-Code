@@ -4,7 +4,7 @@ public class Store
     
     Scanner input = new Scanner(System.in);
     Inventory inventory = new Inventory();
-    LevelSelect level;
+    LevelSelect level = new LevelSelect(input);
     int p_cotton = 10;
     int p_tobacco = 5;
     
@@ -12,7 +12,7 @@ public class Store
     
     public Store(Scanner s)
     {
-     
+        
     }
     
     public String printName()
