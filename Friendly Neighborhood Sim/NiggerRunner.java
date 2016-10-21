@@ -43,7 +43,7 @@ public class NiggerRunner
         
 
 
-        level.setMainNiggers(n[1], n[2], n[3]);
+        level.setMainNiggers(n);
         level.level();
        
         

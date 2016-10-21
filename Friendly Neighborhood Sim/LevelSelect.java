@@ -4,9 +4,7 @@ public class LevelSelect
     private int a;
     Plantation plantation1;
     Scanner input;
-    Nigger n1 = new Nigger();
-    Nigger n2 = new Nigger();
-    Nigger n3 = new Nigger();
+    Nigger[] n = new Nigger[50];
     Store store;
 
     public LevelSelect(Scanner s, Store param_store, Plantation param_plant)
@@ -15,11 +13,9 @@ public class LevelSelect
         store = param_store;
         plantation1 = param_plant;
     }
-    public void setMainNiggers(Nigger mn1, Nigger mn2, Nigger mn3)
+    public void setMainNiggers(Nigger[] x)
     {
-        n1 = mn1;
-        n2 = mn2;
-        n3 = mn3;
+        n = x;
     }
     public void level()
     {
@@ -32,7 +28,7 @@ public class LevelSelect
         if (a == 1)
         {
            moveOn();
-          plantation1.setMainNiggers(n1, n2, n3);
+          plantation1.setMainNiggers(n);
           plantation1.Story();
         }
         if (a == 4)

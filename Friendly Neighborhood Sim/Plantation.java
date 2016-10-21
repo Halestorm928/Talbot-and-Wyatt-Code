@@ -1,10 +1,8 @@
 import java.util.Scanner;
 public class Plantation
 {
-    Nigger n1 = new Nigger();
-    Nigger n2 = new Nigger();
-    Nigger n3 = new Nigger();
-   
+    Nigger[] n = new Nigger[50];
+    
     int choice;
     Scanner input;
     
@@ -16,11 +14,10 @@ public class Plantation
     {
         return "Plantation 1";
     }
-    public void setMainNiggers(Nigger mn1, Nigger mn2, Nigger mn3)
+    public void setMainNiggers(Nigger[] x)
     {      
-        n1 = mn1;
-        n2 = mn2;
-        n3 = mn3;
+        n = x;
+        //This gets the nigger array from main
     }
     public void moveOn()
     {
@@ -49,220 +46,81 @@ public class Plantation
     {
         boolean isfn;
         int numLashes;
-        
+        byte nindex = 0;
         
         
         System.out.println("Choose a nigger:");
         
-        System.out.println(n1.getName() + "(1) " +n2.getName() +"(2) " + n3.getName() + "(3)");
+        System.out.println(n[1].getName() + "(1) " +n[2].getName() +"(2) " + n[3].getName() + "(3)");
 
         choice = input.nextInt();
         
         moveOn();
         switch(choice)
         {
+            case 1: nindex = 1; break;
+            case 2: nindex = 2; break;
+            case 3: nindex = 3; break;
+        }
+        System.out.println("Here's " + n[nindex].getName() + "'s stats");
+        System.out.println("");
+        n[nindex].printStats();
+            if (!n[nindex].getFieldNigger())
+            {
+                System.out.println("Add this nigger to the field?");
+                System.out.println("Yes(1)\t\tNo(2)");
+                choice = 0;
+                choice = input.nextInt();
+                switch (choice)
+                {
+                    case 1: 
+                        isfn = true;
+                        n[nindex].setIsFieldNigger(isfn);
+                        System.out.println(n[nindex].getName() + " is now a field nigger!"); break;
+                    default: break;
+                        
+                }
+            }
+            else if (n[nindex].getFieldNigger())
+            {
+                System.out.println("Remove this nigger from the field?");
+                System.out.println("Yes(1)\t\tNo(2)");
+                choice = 0;
+                choice = input.nextInt();
+                switch (choice)
+                {
+                    case 1: 
+                        isfn = true;
+                        n[nindex].setIsFieldNigger(isfn);
+                        System.out.println(n[nindex].getName() + " is now a field nigger!"); break;
+                    default: break;
+                }
+            }
+        System.out.println("Whip your nigger?");
+        System.out.println("Yes(1)\t\tNo(2)");
+        choice = 0;
+        choice = input.nextInt();
+        switch (choice)
+        {
             case 1: 
-        }
-        if (choice == 1)
-        {
-            
-            System.out.println("Here's " + n1.getName() + "'s stats");
-            System.out.println("");
-            n1.printStats();
-            if (n1.getFieldNigger() == false)
-            {
-                System.out.println("Add this nigger to the field?");
-                System.out.println("Yes(1)\t\tNo(2)");
-                choice = 0;
-                choice = input.nextInt();
-                if (choice == 1)
-                {
-                    isfn = true;
-                    n1.setIsFieldNigger(isfn);
-                    System.out.println(n1.getName() + " is now a field nigger!");
-                }
-                else if (choice == 2)
-                {
-                    //Does nothing
-                }
-            }
-            else if (n1.getFieldNigger() == true)
-            {
-                System.out.println("Remove this nigger from the field?");
-                System.out.println("Yes(1)\t\tNo(2)");
-                choice = 0;
-                choice = input.nextInt();
-                if (choice == 1)
-                {
-                    isfn = false;
-                    n1.setIsFieldNigger(isfn);
-                    System.out.println(n1.getName() + " is no longer a field nigger!");
-                }
-                else if (choice == 2)
-                {
-                    //Does nothing
-                }
-            }
-            System.out.println("Whip your nigger?");
-            System.out.println("Yes(1)\t\tNo(2)");
-            choice = 0;
-            choice = input.nextInt();
-            if (choice == 1)
-            {
-                System.out.println("How many times will you whip " + n1.getName() + "?");
+                System.out.println("How many times will you whip " + n[nindex].getName() + "?");
                 numLashes = 0;
                 numLashes = input.nextInt();
                 for(int i = 0; i <= numLashes; i++ )
                 {
-                    n1.whipNigger();
+                    n[nindex].whipNigger();
                 }
                 moveOn();
-                System.out.println("You've whipped " + n1.getName() + " " + numLashes + " times!");
+                System.out.println("You've whipped " + n[nindex].getName() + " " + numLashes + " times!");
                 System.out.println("______________________________________________________");
-                n1.printStats();
-            }    
-            else if (choice == 2)
-            {
+                n[nindex].printStats(); break;
+            case 2:
                 System.out.println("Your nigger is not whipped today");
                 System.out.println("______________________________________________________");
-            }
-            moveOn();
+                break;
+        }
+        moveOn();
             
         }
         
-        if (choice == 2)
-        {
-            
-            System.out.println("Here's " + n2.getName() + "'s stats");
-            System.out.println("");
-            n2.printStats();
-            if (n1.getFieldNigger() == false)
-            {
-                System.out.println("Add this nigger to the field?");
-                System.out.println("Yes(1)\t\tNo(2)");
-                choice = 0;
-                choice = input.nextInt();
-                if (choice == 1)
-                {
-                    isfn = true;
-                    n2.setIsFieldNigger(isfn);
-                    System.out.println(n2.getName() + " is now a field nigger!");
-                }
-                else if (choice == 2)
-                {
-                    //Does nothing
-                }
-            }
-            else if (n2.getFieldNigger() == true)
-            {
-                System.out.println("Remove this nigger from the field?");
-                System.out.println("Yes(1)\t\tNo(2)");
-                choice = 0;
-                choice = input.nextInt();
-                if (choice == 1)
-                {
-                    isfn = false;
-                    n2.setIsFieldNigger(isfn);
-                    System.out.println(n2.getName() + " is no longer a field nigger!");
-                }
-                else if (choice == 2)
-                {
-                    //Does nothing
-                }
-            }
-            System.out.println("Whip your nigger?");
-            System.out.println("Yes(1)\t\tNo(2)");
-            choice = 0;
-            choice = input.nextInt();
-            if (choice == 1)
-            {
-                System.out.println("How many times will you whip " + n2.getName() + "?");
-                numLashes = 0;
-                numLashes = input.nextInt();
-                for(int i = 0; i <= numLashes; i++ )
-                {
-                    n2.whipNigger();
-                }
-                moveOn();
-                System.out.println("You've whipped " + n2.getName() + " " + numLashes + " times!");
-                System.out.println("______________________________________________________");
-                n2.printStats();
-            }    
-            else if (choice == 2)
-            {
-                System.out.println("Your nigger is not whipped today");
-                System.out.println("______________________________________________________");
-            }
-            moveOn();
-            
-        }
-        
-        if (choice == 3)
-        {
-            
-            System.out.println("Here's " + n3.getName() + "'s stats");
-            System.out.println("");
-            n3.printStats();
-            if (n1.getFieldNigger() == false)
-            {
-                System.out.println("Add this nigger to the field?");
-                System.out.println("Yes(1)\t\tNo(2)");
-                choice = 0;
-                choice = input.nextInt();
-                if (choice == 1)
-                {
-                    isfn = true;
-                    n3.setIsFieldNigger(isfn);
-                    System.out.println(n3.getName() + " is now a field nigger!");
-                }
-                else if (choice == 2)
-                {
-                    //Does nothing
-                }
-            }
-            else if (n3.getFieldNigger() == true)
-            {
-                System.out.println("Remove this nigger from the field?");
-                System.out.println("Yes(1)\t\tNo(2)");
-                choice = 0;
-                choice = input.nextInt();
-                if (choice == 1)
-                {
-                    isfn = false;
-                    n1.setIsFieldNigger(isfn);
-                    System.out.println(n3.getName() + " is no longer a field nigger!");
-                }
-                else if (choice == 2)
-                {
-                    //Does nothing
-                }
-            }
-            System.out.println("Whip your nigger?");
-            System.out.println("Yes(1)\t\tNo(2)");
-            choice = 0;
-            choice = input.nextInt();
-            if (choice == 1)
-            {
-                System.out.println("How many times will you whip " + n2.getName() + "?");
-                numLashes = 0;
-                numLashes = input.nextInt();
-                for(int i = 0; i <= numLashes; i++ )
-                {
-                    n1.whipNigger();
-                }
-                moveOn();
-                System.out.println("You've whipped " + n3.getName() + " " + numLashes + " times!");
-                System.out.println("______________________________________________________");
-                n3.printStats();
-            }    
-            else if (choice == 2)
-            {
-                System.out.println("Your nigger is not whipped today");
-                System.out.println("______________________________________________________");
-            }
-            moveOn();
-            
-        }
-        
-    }
-}
+   }
