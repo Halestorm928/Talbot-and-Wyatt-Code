@@ -15,6 +15,7 @@ public class NiggerRunner
         LevelSelect level = new LevelSelect(input, store, plantation1);
         //The store still needs to get the level
         store.getLevel(level);
+        plantation1.setLevel(level);
         //Dont know if inventory needs anything yet
         //will be accessed several times though
         Inventory inv = new Inventory();

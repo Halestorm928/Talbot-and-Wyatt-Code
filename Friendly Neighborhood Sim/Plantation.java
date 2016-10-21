@@ -5,6 +5,7 @@ public class Plantation
     
     int choice;
     Scanner input;
+    LevelSelect level;
     
     public Plantation (Scanner s)
     {
@@ -19,13 +20,15 @@ public class Plantation
         n = x;
         //This gets the nigger array from main
     }
+    public void setLevel(LevelSelect l)
+    {      
+        level = l;
+    }
     public void moveOn()
     {
         System.out.println("Press Enter to continue...");
         String enter;
-        enter = input.nextLine();
-        
-        
+        enter = input.nextLine();              
         
         if(enter.isEmpty())
         {
@@ -52,7 +55,7 @@ public class Plantation
         System.out.println("Choose a nigger:");
         
         System.out.println(n[1].getName() + "(1) " +n[2].getName() +"(2) " + n[3].getName() + "(3)");
-
+        choice = 0;
         choice = input.nextInt();
         
         moveOn();
@@ -109,6 +112,7 @@ public class Plantation
                 for(int i = 0; i <= numLashes; i++ )
                 {
                     n[nindex].whipNigger();
+                    n[nindex].checkLevelUp();
                 }
                 moveOn();
                 System.out.println("You've whipped " + n[nindex].getName() + " " + numLashes + " times!");
@@ -120,7 +124,19 @@ public class Plantation
                 break;
         }
         moveOn();
+        System.out.println("Stay at your plantation?");
+        System.out.println("Yes(1)\t\tNo(2)");
+        choice = 0;
+        choice = input.nextInt();
+        switch (choice)
+        {
+            case 1: moveOn(); ReRunStory(); break;
+            case 2: moveOn(); level.level(); break;
+        }
             
         }
-        
+    public void ReRunStory()
+    {
+        Story();
+    }
    }
