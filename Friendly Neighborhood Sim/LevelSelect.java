@@ -27,13 +27,12 @@ public class LevelSelect
         
         if (a == 1)
         {
-           moveOn();
+          moveOn();
           plantation1.setMainNiggers(n);
           plantation1.Story();
         }
         if (a == 4)
         {
-            moveOn();
             store.RunStore();
         }
     }
