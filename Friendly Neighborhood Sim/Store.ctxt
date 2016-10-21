@@ -1,16 +1,18 @@
 #BlueJ class context
 comment0.params=s
 comment0.target=Store(java.util.Scanner)
-comment1.params=
-comment1.target=java.lang.String\ printName()
+comment1.params=l
+comment1.target=void\ getLevel(LevelSelect)
 comment2.params=
-comment2.target=void\ RunStore()
+comment2.target=java.lang.String\ printName()
 comment3.params=
-comment3.target=void\ Sell()
+comment3.target=void\ RunStore()
 comment4.params=
-comment4.target=void\ Buy()
+comment4.target=void\ Sell()
 comment5.params=
-comment5.target=void\ ReRun()
+comment5.target=void\ Buy()
 comment6.params=
-comment6.target=void\ Back()
-numComments=7
+comment6.target=void\ ReRun()
+comment7.params=
+comment7.target=void\ Back()
+numComments=8

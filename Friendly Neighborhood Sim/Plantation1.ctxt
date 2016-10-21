@@ -1,14 +1,16 @@
 #BlueJ class context
-comment0.params=
-comment0.target=java.lang.String\ printName()
-comment1.params=mn1\ mn2\ mn3
-comment1.target=void\ setMainNiggers(Nigger,\ Nigger,\ Nigger)
-comment2.params=
-comment2.target=void\ moveOn()
+comment0.params=s
+comment0.target=Plantation1(java.util.Scanner)
+comment1.params=
+comment1.target=java.lang.String\ printName()
+comment2.params=mn1\ mn2\ mn3
+comment2.target=void\ setMainNiggers(Nigger,\ Nigger,\ Nigger)
 comment3.params=
-comment3.target=void\ welcome()
+comment3.target=void\ moveOn()
 comment4.params=
-comment4.target=void\ plantName()
+comment4.target=void\ welcome()
 comment5.params=
-comment5.target=void\ Story()
-numComments=6
+comment5.target=void\ plantName()
+comment6.params=
+comment6.target=void\ Story()
+numComments=7

@@ -2,17 +2,18 @@ import java.util.Scanner;
 public class LevelSelect
 {
     private int a;
-    Plantation1 plantation1 = new Plantation1();
+    Plantation1 plantation1;
     Scanner input;
-    Store store = new Store(input);
     Nigger n1 = new Nigger();
     Nigger n2 = new Nigger();
     Nigger n3 = new Nigger();
-   
+    Store store;
 
-    public LevelSelect(Scanner s)
+    public LevelSelect(Scanner s, Store param_store, Plantation1 param_plant)
     {
         input = s;
+        store = param_store;
+        plantation1 = param_plant;
     }
     public void setMainNiggers(Nigger mn1, Nigger mn2, Nigger mn3)
     {
@@ -24,8 +25,7 @@ public class LevelSelect
     {
         System.out.println("Where would you like to go?");
         System.out.println("");
-        System.out.println(plantation1.printName() + store.printName());
-        System.out.println("(1)  (4)");
+        System.out.println(plantation1.printName() + "(1)\t"+ store.printName() + "(4)");
         
         a = input.nextInt();
         

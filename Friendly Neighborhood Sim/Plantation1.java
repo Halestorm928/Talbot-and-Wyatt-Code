@@ -8,6 +8,10 @@ public class Plantation1
     int choice;
     Scanner input;
     
+    public Plantation1 (Scanner s)
+    {
+        input = s;
+    }
     public String printName()
     {
         return "Plantation 1";

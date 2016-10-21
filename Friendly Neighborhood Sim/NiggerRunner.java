@@ -9,8 +9,10 @@ public class NiggerRunner
         ClearScreen clear = new ClearScreen();
         Intro intro = new Intro(input);
         setParam setParam = new setParam();
-        Plantation1 plantation1 = new Plantation1();
-        LevelSelect level = new LevelSelect(input);
+        Plantation1 plantation1 = new Plantation1(input);
+        Store store = new Store(input);
+        LevelSelect level = new LevelSelect(input, store, plantation1);
+        store.getLevel(level);
         Inventory inventory = new Inventory();
         
         
