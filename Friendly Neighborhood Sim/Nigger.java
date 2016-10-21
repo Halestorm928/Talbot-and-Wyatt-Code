@@ -136,7 +136,7 @@ public class Nigger
     {
         if (curexp >= maxexp)
         {
-            curexp = curexp - maxhp;
+            curexp = curexp - maxexp;
             lvl += 1;
             maxexp = (int)(Math.ceil (maxexp * 1.2));
             // Upping stats
