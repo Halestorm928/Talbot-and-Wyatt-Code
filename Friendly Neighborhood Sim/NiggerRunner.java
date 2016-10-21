@@ -9,21 +9,29 @@ public class NiggerRunner
         ClearScreen clear = new ClearScreen();
         Intro intro = new Intro(input);
         setParam setParam = new setParam();
-        Plantation1 plantation1 = new Plantation1(input);
+        //Recurring classes that will be accessed
+        Plantation plantation1 = new Plantation(input);
         Store store = new Store(input);
         LevelSelect level = new LevelSelect(input, store, plantation1);
+        //The store still needs to get the level
         store.getLevel(level);
-        Inventory inventory = new Inventory();
+        //Dont know if inventory needs anything yet
+        //will be accessed several times though
+        Inventory inv = new Inventory();
         
         
         Nigger[] n = new Nigger[50];
-                        
+        //This is an array of niggers that will be used throught
+        
         setParam.randNumGen();
         n[1] = setParam.setNewNigger(n[1]);
+        inv.numOfNigs += 1;
         setParam.randNumGen(); ///
         n[2] = setParam.setNewNigger(n[2]);
+        inv.numOfNigs += 1;
         setParam.randNumGen();///
         n[3] = setParam.setNewNigger(n[3]);
+        inv.numOfNigs += 1;
         
         intro.Intro();
         level.moveOn();

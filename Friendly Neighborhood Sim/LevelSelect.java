@@ -2,14 +2,14 @@ import java.util.Scanner;
 public class LevelSelect
 {
     private int a;
-    Plantation1 plantation1;
+    Plantation plantation1;
     Scanner input;
     Nigger n1 = new Nigger();
     Nigger n2 = new Nigger();
     Nigger n3 = new Nigger();
     Store store;
 
-    public LevelSelect(Scanner s, Store param_store, Plantation1 param_plant)
+    public LevelSelect(Scanner s, Store param_store, Plantation param_plant)
     {
         input = s;
         store = param_store;

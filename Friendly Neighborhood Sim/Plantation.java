@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Plantation1
+public class Plantation
 {
     Nigger n1 = new Nigger();
     Nigger n2 = new Nigger();
@@ -8,7 +8,7 @@ public class Plantation1
     int choice;
     Scanner input;
     
-    public Plantation1 (Scanner s)
+    public Plantation (Scanner s)
     {
         input = s;
     }
@@ -59,6 +59,10 @@ public class Plantation1
         choice = input.nextInt();
         
         moveOn();
+        switch(choice)
+        {
+            case 1: 
+        }
         if (choice == 1)
         {
             
