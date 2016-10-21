@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.params=s\ param_store\ param_plant
 comment0.target=LevelSelect(java.util.Scanner,\ Store,\ Plantation)
-comment1.params=x
-comment1.target=void\ setMainNiggers(Nigger[])
+comment1.params=mn1\ mn2\ mn3
+comment1.target=void\ setMainNiggers(Nigger,\ Nigger,\ Nigger)
 comment2.params=
 comment2.target=void\ level()
 comment3.params=

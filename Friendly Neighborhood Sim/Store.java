@@ -55,7 +55,7 @@ public class Store
             RunStore(); break;
          case 3: Back(); break;
          default: System.out.println("Wrong number, try again"); ReRun(); break;
-    }
+        }
     }
     public void Buy()
     {
