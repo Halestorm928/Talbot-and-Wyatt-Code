@@ -130,6 +130,15 @@ public class Nigger
     {
         isFieldNigger = param_isFieldNigger;
     }    
+    public void waitDay()
+    {
+        curhp += 5;
+        curexp += 1;
+        if (curhatred > 0)
+        {
+            curhatred -= 2;
+        }
+    }
     
     //Checker
     public void checkLevelUp()

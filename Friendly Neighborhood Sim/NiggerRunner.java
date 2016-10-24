@@ -19,7 +19,8 @@ public class NiggerRunner
         //Dont know if inventory needs anything yet
         //will be accessed several times though
         Inventory inv = new Inventory();
-        
+        Field field = new Field(input);
+        plantation1.setField(field);                
         
         Nigger[] n = new Nigger[50];
         //This is an array of niggers that will be used throught
@@ -33,6 +34,8 @@ public class NiggerRunner
         setParam.randNumGen();///
         n[3] = setParam.setNewNigger(n[3]);
         inv.numOfNigs += 1;
+        
+        
         
         intro.Intro();
         level.moveOn();

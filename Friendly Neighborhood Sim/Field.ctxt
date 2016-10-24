@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=s
+comment0.target=Field(java.util.Scanner)
+comment1.params=x
+comment1.target=void\ setMainNiggers(Nigger[])
+comment2.params=param_days
+comment2.target=void\ setDays(int)
+comment3.params=
+comment3.target=void\ debug()
+comment4.params=
+comment4.target=void\ waitDay()
+numComments=5

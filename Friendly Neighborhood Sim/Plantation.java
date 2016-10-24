@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Plantation
 {
     Nigger[] n = new Nigger[50];
-    
+    Field field;
     int choice;
     Scanner input;
     LevelSelect level;
@@ -23,6 +23,10 @@ public class Plantation
     public void setLevel(LevelSelect l)
     {      
         level = l;
+    }
+    public void setField(Field f)
+    {
+        field = f;
     }
     public void moveOn()
     {
@@ -49,9 +53,10 @@ public class Plantation
     {
         boolean isfn;
         int numLashes;
+        int numDays = 0;
         byte nindex = 0;
         
-        
+        field.setMainNiggers(n);
         System.out.println("Choose a nigger:");
         
         System.out.println(n[1].getName() + "(1) " +n[2].getName() +"(2) " + n[3].getName() + "(3)");
@@ -124,6 +129,25 @@ public class Plantation
                 break;
         }
         moveOn();
+        System.out.println("Will you work you niggers?");
+        System.out.println("Yes(1)\t\tNo(2)");
+        choice = 0;
+        choice = input.nextInt();
+        switch (choice)
+        {
+            case 1: 
+                System.out.println("How many days will you work you nigger?");
+                numDays = input.nextInt();
+                field.setDays(numDays);
+                field.setMainNiggers(n);
+                field.debug();
+                field.waitDay(); break;
+            case 2: 
+                System.out.println("You wait to work your niggers.");
+                break;
+        }
+        moveOn();
+        
         System.out.println("Stay at your plantation?");
         System.out.println("Yes(1)\t\tNo(2)");
         choice = 0;
